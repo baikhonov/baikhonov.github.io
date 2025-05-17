@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <label class="compact-toggle">
+        <span class="compact-toggle-text">Показать цены</span>
+        <input type="checkbox" class="compact-toggle-input">
+        <span class="compact-toggle-slider"></span>
+    </label>
+    <table>
+        <caption>
+            Расписание
+        </caption>
+        <thead>
+            <tr>
+                <th>Время</th>
+                <th>Пятница (30 мая)</th>
+                <th>Суббота (31 мая)</th>
+                <th>Воскресенье (1 июня)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11:00</td>
+                <td></td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Парный класс</p>
+                        <p>«Как танцевать просто и красиво»</p>
+                    </div>
+                    <p class="author">Андрей Попов</p>
+                    <p class="price">1300 Р</p>
+                </td>
+                <td rowspan="3">
+                    <div class="topic">
+                        <p>Парный класс</p>
+                        <p>«Три блока музыкальности»</p>
+                    </div>
+                    <p class="author">Алексей Фионов</p>
+                    <p class="price">1500 Р</p>
+                </td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td></td>
+                <td>Обеденный перерыв</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>13:30</td>
+                <td></td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Парный класс</p>
+                        <p>«PROсто, но красиво»</p>
+                    </div>
+                    <p class="author">Андрей Попов</p>
+                    <p class="price">600 Р</p>
+                </td>
+                <td>Обеденный перерыв</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td></td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Lady Style</p>
+                        <p>(начинающие)</p>
+                    </div>
+                    <p class="author">Татьяна Тлегенова</p>
+                </td>
+            </tr>
+            <tr>
+                <td>14:30</td>
+                <td></td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Сольный класс</p>
+                        <p>«Бачата Доминикана»</p>
+                    </div>
+                    <p class="author">Андрей Попов</p>
+                    <p class="price">600 Р</p>
+                </td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td></td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Lady Style</p>
+                        <p>(старшие)</p>
+                    </div>
+                    <p class="author">Татьяна Тлегенова</p>
+                </td>
+            </tr>
+            <tr>
+                <td>15:30</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>18:30</td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Lady Style</p>
+                        <p>(начинающие)</p>
+                    </div>
+                    <p class="author">Татьяна Тлегенова</p>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Занятие в парах</p>
+                        <p>(начинающие)</p>
+                    </div>
+                    <p class="author">Кеулемжай и Татьяна</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>19:30</td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Сольный класс</p>
+                        <p>«Координация и пластика тела»</p>
+                    </div>
+                    <p class="author">Алексей Фионов</p>
+                    <p class="price">600 Р</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td rowspan="2">
+                    <div class="topic">
+                        <p>Party</p>
+                        <p>«Здравствуй, Лето»</p>
+                    </div>
+                    <p class="dresscode">Дресс код - желтый, оранжевый</p>
+                    <p class="price">Cписание с абонемента или 500 Р</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>20:30</td>
+                <td rowspan="1">
+                    <div class="topic">
+                        <p>Preparty</p>
+                        <p>«Прощай, весна»</p>
+                    </div>
+                    <p class="dresscode">Дресс код - одежда в горошек/клеточку/полоску</p>
+                    <p class="price">Cписание с абонемента или 400 Р</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>23:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

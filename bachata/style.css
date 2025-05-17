@@ -1,0 +1,134 @@
+body {
+    font-family: "Bebas Neue Regular", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+caption {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+thead,
+tfoot {
+    background-color: rgb(228 240 245);
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+th {
+    width: 28%;
+    font-variant-caps: small-caps;
+}
+
+th:first-child {
+    width: 16%;
+}
+
+td {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 11px;
+}
+
+p {
+    margin: 0;
+}
+
+.topic {
+    font-weight: 600;
+}
+
+.topic:not(:only-child) {
+    margin-bottom: 10px;
+}
+
+.dresscode {
+    font-size: 0.8em;
+}
+
+.price {
+    margin-top: 5px;
+
+    font-weight: 500;
+}
+
+.compact-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.compact-toggle-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.compact-toggle-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.compact-toggle-slider {
+    display: inline-block;
+    width: 36px;
+    /* уменьшенная ширина */
+    height: 20px;
+    /* уменьшенная высота */
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.compact-toggle-slider:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    /* уменьшенный размер кружка */
+    height: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.compact-toggle-input:checked+.compact-toggle-slider {
+    background-color: #4CAF50;
+    /* цвет активного состояния */
+}
+
+.compact-toggle-input:checked+.compact-toggle-slider:before {
+    transform: translateX(16px);
+    /* сдвиг кружка */
+}
+
+.compact-toggle-input:focus+.compact-toggle-slider {
+    box-shadow: 0 0 2px #4CAF50;
+    /* эффект фокуса */
+}
+
+/* Скрываем цены по умолчанию */
+.price {
+    display: none;
+  }
+  
+  /* Показываем цены, когда body имеет класс prices-visible */
+  body.prices-visible .price {
+    display: block;
+  }
